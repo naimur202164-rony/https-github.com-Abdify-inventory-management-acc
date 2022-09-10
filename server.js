@@ -7,7 +7,7 @@ const app = require("./app");
 
 // database connection
 // DBConnect();
-mongoose.connect("mongodb://localhost:27017/acc-inventory").then(() => {
+mongoose.connect(process.env.DATABASE_LOCAL).then(() => {
   console.log("Database Connected Successfully");
 });
 
