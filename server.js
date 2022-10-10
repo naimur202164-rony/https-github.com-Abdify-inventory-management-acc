@@ -1,17 +1,13 @@
 const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
 const colors = require("colors");
-const DBConnect = require("./utils/dbConnect.js");
 
 const app = require("./app");
 
 // database connection
 // DBConnect();
-// mongoose.connect(process.env.DATABASE_LOCAL).then(() => {
-//   console.log(`Database Connected Successfully `.red.bold);
-// });
-mongoose.connect(process.env.DATABASE_LOCAL).then(() => {
-  console.log(`Database connection  is successuffly`.red.bold);
+mongoose.connect(`mongodb://localhost:27017/inventory`).then(() => {
+  console.log(`Database Connected Successfully `.red.bold);
 });
 
 // server
