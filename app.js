@@ -46,6 +46,10 @@ const productSchema = mongoose.Schema({
       message: "Qunantity must be an integer",
     },
   },
+  status: {
+    type: String,
+    enum: ["in-stock", "out-of-stock", "discontinued"],
+  },
 });
 
 // Time:11min 12sec
