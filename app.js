@@ -58,6 +58,10 @@ const productSchema = mongoose.Schema({
     type: Date(),
     default: Date.now,
   },
+  updatedAt: {
+    type: Date,
+    default: Date.now,
+  },
 });
 
 // Time:11min 12sec
