@@ -1,2 +1,2 @@
-DATABASE_LOCAL=mongodb://localhost:27017
-PORT=5000
+DATABASE_LOCAL = "mongodb://localhost:27017/inventory";
+PORT = 5000;
